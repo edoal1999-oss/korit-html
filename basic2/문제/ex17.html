@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-a {
+            width: 200px;
+            padding: 20px;
+            border: 5px solid black;
+            box-sizing: content-box;
+        }
+        .box-b {
+            width: 200px;
+            padding: 20px;
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-a"></div>
+    <div class="box-b"></div>
+
+    <!-- box-a 250 x 50 = 12500px -->
+    <!-- box-b 200 x 50 = 10000px -->
+    <!-- 직관적이라고 표현하기 애매하지만, 본질적인 크기에 더 가까운 쪽은 b. a는 패딩과 마진까지 다 합쳐진 크기이므로.-->
+</body>
+</html>
