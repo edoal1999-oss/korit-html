@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //함수
+        function add(a, b) {
+            return a + b;
+        }
+
+        const add2 = function (a, b) {
+            return a + b;
+        }
+
+        let add3 = function (a , b) {
+            return a + b;
+        }
+
+        console.log(add(10, 20));
+        console.log(add2(10, 20));
+        console.log(add3(10, 20));
+        console.log(function (a, b) {return a + b}(10, 20));
+
+        let add4 = (a, b) => a + b; //화살표 함수
+        console.log(add4(10, 20));
+        const add5 = (a, b) => {
+            return a + b;
+        };
+        console.log(add5(10, 20));
+    </script>
+</body>
+</html>
